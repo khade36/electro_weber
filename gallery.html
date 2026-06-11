@@ -643,6 +643,11 @@
                     
                     const frontImg = document.createElement('img');
                     frontImg.src = data.frontImage;
+
+frontImg.onerror = function () {
+    console.error("Image not found:", data.frontImage);
+    this.src = "https://via.placeholder.com/300x400?text=Image+Missing";
+};
                     frontImg.alt = 'Gallery Image';
                     cardFront.appendChild(frontImg);
                     

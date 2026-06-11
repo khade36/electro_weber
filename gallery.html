@@ -502,51 +502,47 @@
 
     <script>
         // Define card images and messages
-        const cardData = [
-            { 
-                frontImage: "pic1.jpg", 
-                type: "image"
-            },
-            { 
-                frontImage: "pic2.jpg", 
-                type: "message",
-                message: "You make my heart smile every day! ❤️"
-            },
-            { 
-                frontImage: "pic3.jpg", 
-                type: "image" 
-            },
-            { 
-                frontImage: "pic4.jpg", 
-                type: "gif",
-                gifUrl: "/api/placeholder/400/320",
-                caption: "You're my favorite person!"
-            },
-            { 
-                frontImage: "pic5.jpg", 
-                type: "image" 
-            },
-            { 
-                frontImage: "pic6.jpg", 
-                type: "message",
-                message: "I love the way your eyes crinkle when you laugh! 😊"
-            },
-            { 
-                frontImage: "pic7.jpg", 
-                type: "image" 
-            },
-            { 
-                frontImage: "pic8.jpg", 
-                type: "gif",
-                gifUrl: "/api/placeholder/400/320",
-                caption: "You're the cutest!"
-            },
-            { 
-                frontImage: "pic9.JPG", 
-                type: "message",
-                message: "Every moment with you is a gift I cherish! 💝"
-            }
-        ];
+       const cardData = [
+    {
+        frontImage: "./pic1.jpg",
+        type: "image"
+    },
+    {
+        frontImage: "./pic2.jpg",
+        type: "message",
+        message: "You make my heart smile every day! ❤️"
+    },
+    {
+        frontImage: "./pic3.jpg",
+        type: "image"
+    },
+    {
+        frontImage: "./pic4.jpg",
+        type: "image"
+    },
+    {
+        frontImage: "./pic5.jpg",
+        type: "image"
+    },
+    {
+        frontImage: "./pic6.jpg",
+        type: "message",
+        message: "You are an amazing friend! 😊"
+    },
+    {
+        frontImage: "./pic7.jpg",
+        type: "image"
+    },
+    {
+        frontImage: "./pic8.jpg",
+        type: "image"
+    },
+    {
+        frontImage: "./pic9.jpg",
+        type: "message",
+        message: "Every moment with you is a memory worth keeping! 💝"
+    }
+];
 
         // Track interaction for each card
         let cardInteractions = new Array(cardData.length).fill(false);
